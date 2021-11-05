@@ -139,10 +139,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/archives/">
+  <link rel="canonical" href="http://yoursite-url/cn/Data-Visualization-with-Python-学習ノート/">
   <title>
     
-      either thin | or die
+      Matplotlib 学習ノート - either thin | or die
     
   </title>
 <meta name="generator" content="Hexo 5.4.0"></head>
@@ -229,7 +229,7 @@
       <div class="navbar-collapse">
         <ul class="nav navbar-nav navbar-right">
           <li>
-            <a href="/">HOME</a>
+            <a href="/">首页</a>
           </li>
 
           
@@ -239,7 +239,7 @@
           <li>
             <a href="/archive/">
               
-              ARCHIVES
+              归档
               
               
             </a>
@@ -250,7 +250,7 @@
           <li>
             <a href="/tags/">
               
-              TAGS
+              标签
               
               
             </a>
@@ -261,7 +261,7 @@
           <li>
             <a href="/about/">
               
-              ABOUT
+              关于
               
               
             </a>
@@ -272,7 +272,7 @@
           <li>
             <a href="/categories/">
               
-              CATEGORIES
+              分类
               
               
             </a>
@@ -283,36 +283,14 @@
           
           <li>
             <a class="popup-trigger">
-              <span class="search-icon"></span>SEARCH</a>
+              <span class="search-icon"></span>搜索</a>
           </li>
           
 
           <!-- LangSelect -->
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      English
-    </span>
-    <select id="lang-select" data-canonical="archives/index.html">
-      
-      
-      <option value="en"  selected >
-        English
-      </option>
-      
-      <option value="cn" >
-        简体中文
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -364,19 +342,19 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: url('');
-      --intro-header-background-image-url-page: url('/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/newhome_bg.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/newhome_bg.jpg');
     }
 
     header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('/img/header_img/archive_bg2.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/newhome_bg.jpg'); */
       
     }
 
@@ -394,10 +372,46 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>Detachment</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">Hi! This is my blog!</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#Python" title="Python">Python</a>
+              
+              <a class="tag" href="/tags/#Date Science" title="Date Science">Date Science</a>
+              
+              <a class="tag" href="/tags/#Matplotlib" title="Matplotlib">Matplotlib</a>
+              
+            </div>
+            <h1>Matplotlib 学習ノート</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by Mr.G on
+              2021-11-02
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">2</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">525</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -438,251 +452,231 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h2 id="Matplotlibとは">Matplotlibとは</h2>
+<p><a target="_blank" rel="noopener" href="https://matplotlib.org/">matplotlib</a>は、Pythonでグラフを描画したり、イメージを表示させたりする際に使用するライブラリです。matplotlibを使うと、様々な種類のグラフを描画することができます。主に2次元のグラフですが、3次元のグラフも描画することができます。</p>
+<h2 id="インストール">インストール</h2>
+<p>matplotlibライブラリをインストールするには、コマンドプロンプトで次のコマンドを実行させてみてください。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip install matplotlib</span><br></pre></td></tr></table></figure>
+<p>数値計算ライブラリであるNumPyもインストールしましょう！</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ pip install numpy</span><br></pre></td></tr></table></figure>
+<h2 id="Matplotlibの使い方">Matplotlibの使い方</h2>
+<h3 id="線グラフ">線グラフ</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># 等差数列を生成する</span></span><br><span class="line">x = np.linspace(-<span class="number">5</span>, <span class="number">5</span>, <span class="number">50</span>)</span><br><span class="line"><span class="comment"># 一次関数</span></span><br><span class="line">y = <span class="number">2</span>*x+<span class="number">1</span></span><br><span class="line"><span class="comment"># 二次関数</span></span><br><span class="line">y2 = <span class="number">2</span>*x*x</span><br><span class="line"><span class="comment"># 一次関数を描く</span></span><br><span class="line">plt.plot(x, y, label=<span class="string">&#x27;line1&#x27;</span>)</span><br><span class="line"><span class="comment"># 二次関数を描く</span></span><br><span class="line">plt.plot(x, y2, label=<span class="string">&#x27;line2&#x27;</span>, color=<span class="string">&#x27;red&#x27;</span>, linestyle=<span class="string">&#x27;--&#x27;</span>)</span><br><span class="line"><span class="comment"># x軸の値の範囲とラベル</span></span><br><span class="line">plt.xlim((-<span class="number">5</span>, <span class="number">5</span>))</span><br><span class="line">plt.xlabel(<span class="string">&quot;I am x&quot;</span>)</span><br><span class="line"><span class="comment"># y軸の値の範囲とラベル</span></span><br><span class="line">plt.ylim((-<span class="number">10</span>, <span class="number">10</span>))</span><br><span class="line">plt.ylabel(<span class="string">&quot;I am y&quot;</span>)</span><br><span class="line"><span class="comment"># 凡例を表示する</span></span><br><span class="line">plt.legend()</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="/img/matplotlib/Figure_1.png" alt="line"></p>
+<h3 id="ヒストグラム">ヒストグラム</h3>
+<p>matplotlibライブラリでは**ヒストグラム（棒グラフ）**などの作成も可能です。</p>
+<p>では今回は簡単に<strong>標準正規分布のヒストグラムを作成</strong>してみましょう。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line">x = np.random.normal(<span class="number">0</span>,<span class="number">10</span>,<span class="number">1000</span>)</span><br><span class="line"><span class="comment">#図のタイトル</span></span><br><span class="line">plt.title(<span class="string">&quot;histogram&quot;</span>)</span><br><span class="line">plt.hist(x)</span><br></pre></td></tr></table></figure>
+<p><img src="/img/matplotlib/Figure_2.png" alt="hist"></p>
+<h3 id="散布図">散布図</h3>
+<p>散布図とは<strong>データを点でプロットしたグラフ</strong>です。</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># 点の数</span></span><br><span class="line">n = <span class="number">300</span></span><br><span class="line"><span class="comment"># 乱数で座標を生成する</span></span><br><span class="line">x = np.random.normal(<span class="number">0</span>, <span class="number">1</span>, n)</span><br><span class="line">y = np.random.normal(<span class="number">0</span>, <span class="number">1</span>, n)</span><br><span class="line"><span class="comment">#　色付け</span></span><br><span class="line">t = np.arctan2(y, x)</span><br><span class="line"><span class="comment">#　散布図を指定する</span></span><br><span class="line"><span class="comment"># c： 色、または、連続した色の値</span></span><br><span class="line"><span class="comment"># alpha：透明度。0(透明)～1(不透明)の間の数値を...</span></span><br><span class="line"><span class="comment"># s： サイズ(デフォルト値: 20)</span></span><br><span class="line">plt.scatter(x, y, s=<span class="number">75</span>, c=t, alpha=<span class="number">0.5</span>)</span><br><span class="line">plt.xlim((-<span class="number">2</span>, <span class="number">2</span>))</span><br><span class="line">plt.ylim((-<span class="number">2</span>, <span class="number">2</span>))</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="/img/matplotlib/Figure_3.png" alt="scatter"></p>
+<h3 id="棒グラフ">棒グラフ</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># 棒の値</span></span><br><span class="line">y1 = [<span class="number">90</span>, <span class="number">55</span>, <span class="number">40</span>, <span class="number">70</span>, <span class="number">30</span>]</span><br><span class="line">y2 = [<span class="number">60</span>, <span class="number">87</span>, <span class="number">22</span>, <span class="number">55</span>, <span class="number">88</span>]</span><br><span class="line"><span class="comment"># numpyで横軸を設定</span></span><br><span class="line">x = np.arange(<span class="built_in">len</span>(y1))</span><br><span class="line"></span><br><span class="line">labels = [<span class="string">&quot;cloth&quot;</span>, <span class="string">&quot;shoe&quot;</span>, <span class="string">&quot;iphone&quot;</span>, <span class="string">&quot;kaden&quot;</span>, <span class="string">&quot;pc&quot;</span>]</span><br><span class="line">width = <span class="number">0.3</span></span><br><span class="line">plt.bar(x, y1, facecolor=<span class="string">&quot;r&quot;</span>, width=width)</span><br><span class="line">plt.bar(x+width, y2, facecolor=<span class="string">&quot;b&quot;</span>, width=width)</span><br><span class="line"></span><br><span class="line">plt.xticks(x + width/<span class="number">2</span>, labels)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="/img/matplotlib/Figure_4.png" alt="bar"></p>
+<h3 id="円グラフ">円グラフ</h3>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> matplotlib.pyplot <span class="keyword">as</span> plt</span><br><span class="line"><span class="keyword">import</span> numpy <span class="keyword">as</span> np</span><br><span class="line"></span><br><span class="line"><span class="comment"># 各項目の比率、名前、色</span></span><br><span class="line">x = np.array([<span class="number">0.6</span>, <span class="number">0.15</span>, <span class="number">0.20</span>, <span class="number">0.05</span>])</span><br><span class="line">l = [<span class="string">&quot;Java&quot;</span>, <span class="string">&quot;Python&quot;</span>, <span class="string">&quot;JavaScript&quot;</span>, <span class="string">&quot;Kotlin&quot;</span>]</span><br><span class="line">c = [<span class="string">&quot;red&quot;</span>, <span class="string">&quot;yellow&quot;</span>, <span class="string">&quot;green&quot;</span>, <span class="string">&quot;b&quot;</span>]</span><br><span class="line"><span class="comment"># 円グラフを指定する</span></span><br><span class="line">plt.pie(x, autopct=<span class="string">&quot;%d%%&quot;</span>, labels=l, colors=c)</span><br><span class="line">plt.show()</span><br></pre></td></tr></table></figure>
+<p><img src="/img/matplotlib/Figure_5.png" alt="pie"></p>
+<h2 id="まとめ">まとめ</h2>
+<p>今回はmatplotlibライブラリの基本的な使い方をご紹介しました。データの可視化においてとても便利なツールなので、その使い方を知っておいて損はありません。ぜひマスターして複雑なデータを視覚的に表現できるようになりましょう！</p>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          
+          <li class="next">
+            <a href="/en/Hexo-Theme-LiveMyLife/" data-toggle="tooltip" data-placement="top" title="Hexo-Theme-LiveMyLife">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Tue Nov 02 2021 20:45:59 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Matplotlib%E3%81%A8%E3%81%AF"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Matplotlibとは</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E3%82%A4%E3%83%B3%E3%82%B9%E3%83%88%E3%83%BC%E3%83%AB"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">インストール</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Matplotlib%E3%81%AE%E4%BD%BF%E3%81%84%E6%96%B9"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">Matplotlibの使い方</span></a><ol class="toc-nav-child"><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E7%B7%9A%E3%82%B0%E3%83%A9%E3%83%95"><span class="toc-nav-number">3.1.</span> <span class="toc-nav-text">線グラフ</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E3%83%92%E3%82%B9%E3%83%88%E3%82%B0%E3%83%A9%E3%83%A0"><span class="toc-nav-number">3.2.</span> <span class="toc-nav-text">ヒストグラム</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%95%A3%E5%B8%83%E5%9B%B3"><span class="toc-nav-number">3.3.</span> <span class="toc-nav-text">散布図</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E6%A3%92%E3%82%B0%E3%83%A9%E3%83%95"><span class="toc-nav-number">3.4.</span> <span class="toc-nav-text">棒グラフ</span></a></li><li class="toc-nav-item toc-nav-level-3"><a class="toc-nav-link" href="#%E5%86%86%E3%82%B0%E3%83%A9%E3%83%95"><span class="toc-nav-number">3.5.</span> <span class="toc-nav-text">円グラフ</span></a></li></ol></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E3%81%BE%E3%81%A8%E3%82%81"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">まとめ</span></a></li></ol>
+        
+        </div>
+      </aside>
     
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
+
+
+      <!-- Sidebar Container -->
+      <div class="
                 col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-      <!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
-
-      
-
-      <!-- 归档列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2021">
-          <span class="tag-text">2021</span>
-        </span>
-        <ul>
-          
-          <li>
-            11-02
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cn/Data-Visualization-with-Python-学習ノート/" style="color: #0085a1">
-              <span>
-                Matplotlib 学習ノート
-                
-                -- cn
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-          <span class="tag-text">2020</span>
-        </span>
-        <ul>
-          
-          <li>
-            04-17
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/en/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                Hexo-Theme-LiveMyLife
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Visitors -->
-<h5><a href="/">VISITORS</a></h5>
-
-<div class="widget">
-  <span>
-    Viewed <b><i><span id="busuanzi_value_site_pv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Times
-  </span>
-  <br />
-  <span>
-    <b><i><span id="busuanzi_value_site_uv"><i class="fa fa-spinner fa-spin"></i></span></i></b> Visitors In Total
-  </span>
-</div>
-
-
-        <hr>
-    
         <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#Python" title="Python">Python</a>
+            
+            <a class="tag" href="/tags/#Date Science" title="Date Science">Date Science</a>
+            
+            <a class="tag" href="/tags/#Matplotlib" title="Matplotlib">Matplotlib</a>
+            
+          </div>
+        </section>
+        
 
-<section>
-  <h5><a href="/tags/">FEATURED TAGS</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="1">Hexo-Theme-LiveMyLife</a>
-    
-    
-    
-    <a href="/tags/#Python" title="Python" rel="1">Python</a>
-    
-    
-    
-    <a href="/tags/#Date Science" title="Date Science" rel="1">Date Science</a>
-    
-    
-    
-    <a href="/tags/#Matplotlib" title="Matplotlib" rel="1">Matplotlib</a>
-    
-    
-  </div>
-</section>
-
-
-        <hr>
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">ABOUT ME</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/img/avatar/cat2.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>草道を食って、泥濘を飲んで、目標に近づける</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/googledoodle">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
-        <!-- RECENT POSTS -->
-
-<h5><a href="/">RECENT POSTS</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../cn/Data-Visualization-with-Python-%E5%AD%A6%E7%BF%92%E3%83%8E%E3%83%BC%E3%83%88/">
-      <li>Matplotlib 学習ノート</li>
-    </a>
-    
-    <a href="../en/Hexo-Theme-LiveMyLife/">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
         <!-- Friends Blog -->
-
-<h5><a href="/">FRIENDS</a></h5>
-<ul class="list-inline">
-  
-  <li><a href="https://hexo.io/" target="_blank">Hexo</a></li>
-  
-</ul>
-
-
+        
         <hr>
-    
-        <!-- Archives -->
+        <h5>链友</h5>
+        <ul class="list-inline">
 
-<h5><a href="/archives/">archives</a></h5>
-<div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="2021/11/">November 2021</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="2020/04/">April 2020</a><span class="archive-list-count">1</span></li></ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Categories -->
-
-<h5><a href="/categories/">categories</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#Hexo-Theme-LiveMyLife">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-    <a href="/categories/#Date Science">
-      <li>Date Science</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
-
-    
+          
+          <li>
+            <a href="https://hexo.io/" target="_blank">Hexo</a>
+          </li>
+          
+        </ul>
+        
+      </div>
+    </div>
   </div>
-</div>
+</article>
+
+
+
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
+
+<!-- anchorjs end -->
+
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->
@@ -841,7 +835,7 @@ start: '#bbbbee', end: '#0085a1' } }; $('#tag_cloud a').tagcloud(); }) } </scrip
             <span class="search-icon">
               <i class="fa fa-search fa-lg" style="margin: 25px 10px 25px 20px;"></i>
             </span>
-            <input autocomplete="off" placeholder="SEARCH..." type="text" id="local-search-input">
+            <input autocomplete="off" placeholder="搜索..." type="text" id="local-search-input">
           </div>
         </div>
         <div id="local-search-result"></div>
